@@ -52,6 +52,19 @@ CSV files (git)  --load-->  temporary SQL database  --export-->  CSV files (git)
 The database engine for the working copy is not yet chosen (SQLite, DuckDB and
 PostgreSQL are all candidates). Nothing in the data depends on it.
 
+## Browsing the data
+
+To look through the tables in a web browser (search, filter, follow references
+between tables, run read-only SQL), use [Datasette](https://datasette.io):
+
+```
+pip install -r requirements.txt
+python3 scripts/browse.py          # serves http://127.0.0.1:8001
+```
+
+This rebuilds the disposable `work.db` from `data/*.csv` and serves it
+read-only. Edit the CSVs, then restart to see changes.
+
 ## Planned repository layout
 
 ```

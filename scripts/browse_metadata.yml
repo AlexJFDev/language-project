@@ -1,0 +1,15 @@
+# Datasette metadata for the read-only browser. label_column makes foreign keys
+# show a readable label (e.g. a language's name) instead of its stable id.
+title: Ancient Lexicon Database
+description: Read-only view of a disposable work.db built from data/*.csv.
+databases:
+  work:
+    tables:
+      source: {label_column: title}
+      contributor: {label_column: name}
+      language: {label_column: name}
+      script: {label_column: name}
+      semantic_field: {label_column: name}
+      sign: {label_column: label}
+      inscription: {label_column: name}
+      lexeme: {label_column: form}

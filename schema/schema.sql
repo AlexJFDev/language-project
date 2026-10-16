@@ -97,9 +97,9 @@ CREATE TABLE lexeme (
   id TEXT PRIMARY KEY,
   language_id TEXT NOT NULL REFERENCES language(id),
   form TEXT NOT NULL,
+  pos TEXT,                     -- part of speech, e.g. noun, verb
   word_form_id TEXT REFERENCES word_form(id),
   obtained TEXT NOT NULL CHECK (obtained IN ('copied','extracted','derived','contributed')),
-  license TEXT,
   source_id TEXT NOT NULL REFERENCES source(id),
   page_ref TEXT,
   contributor_id TEXT REFERENCES contributor(id)
@@ -123,9 +123,10 @@ CREATE TABLE meaning (
 CREATE TABLE etymology (
   id TEXT PRIMARY KEY,
   lexeme_id TEXT NOT NULL REFERENCES lexeme(id),
-  relation TEXT NOT NULL CHECK (relation IN ('inherited','borrowed','cognate')),
+  relation TEXT NOT NULL,       -- free text, e.g. inherited, borrowed, cognate, calque
   source_lexeme_id TEXT REFERENCES lexeme(id),
   source_language_id TEXT REFERENCES language(id),
+  source_form TEXT,             -- the source word as text, when it has no lexeme row
   source_id TEXT NOT NULL REFERENCES source(id),
   page_ref TEXT,
   notes TEXT,

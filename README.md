@@ -118,8 +118,9 @@ These keep the CSV files readable in git and the data traceable.
 - **Record how a row was obtained.** Each lexeme notes whether it was copied
   from a source, extracted as a plain fact, independently derived, or written
   by a contributor.
-- **Record the license.** Every source and lexeme carries its license, so an
-  openly licensed subset can be published and restricted material left out.
+- **Record the license.** Every source carries its license, and every row
+  points to its source, so an openly licensed subset can be published and
+  restricted material left out.
 - **Avoid spreadsheet programs for editing.** Excel can silently change
   encodings and reformat cells, which corrupts the Linear A and Linear B signs.
   Use a plain-text editor, or load the data into the working database.
@@ -157,7 +158,7 @@ To be decided before the first release. The plan is a separate license for the
 data (for example CC BY 4.0) and for the code (for example MIT or Apache 2.0).
 Material derived from share-alike sources, such as Wiktionary, may require
 those rows to carry the same share-alike license, which is why each row records
-its license.
+its source and each source its license.
 
 ## Citing
 

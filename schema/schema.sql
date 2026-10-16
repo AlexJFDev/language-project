@@ -108,6 +108,7 @@ CREATE TABLE pronunciation (
   id TEXT PRIMARY KEY,
   lexeme_id TEXT NOT NULL REFERENCES lexeme(id),
   ipa TEXT NOT NULL,
+  variety TEXT,                 -- which pronunciation system, e.g. Classical, Ecclesiastical
   source_id TEXT NOT NULL REFERENCES source(id),
   page_ref TEXT
 );

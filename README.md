@@ -86,7 +86,11 @@ Every table has an `id`. Columns ending in `_id` refer to a row in another table
 
 **Reference**
 - `language`: a language we hold words from. Includes a "Linear A (unknown)"
-  entry.
+  entry. `parent_id` points to the immediate parent: the family a language
+  belongs to, or the language an older variety is a stage of (Old Latin points
+  to Latin). Families are rows too and point to larger families. A language's
+  family is found by following parents, not stored on it, since families are
+  more disputed than immediate ancestry.
 - `script`: a writing system.
 - `semantic_field`: a meaning category such as cloth, grain or metal.
 

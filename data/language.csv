@@ -1,2 +1,557 @@
-id,name,iso_code,family,period,notes
+id,name,iso_code,parent_id,period,notes
+lang-aav-pro,Proto-Austroasiatic,,lang-fam-aav,,Wiktionary language code: aav-pro; reconstructed
+lang-ae,Avestan,,lang-fam-ira-cen,,Wiktionary language code: ae
+lang-ae-old,Old Avestan,,lang-ae,,Wiktionary language code: ae-old; etymology-only
+lang-ae-yng,Younger Avestan,,lang-ae-old,,Wiktionary language code: ae-yng; etymology-only
+lang-agx,Aghul,,lang-fam-cau-esm,,Wiktionary language code: agx
+lang-akk,Akkadian,,lang-fam-sem-eas,,Wiktionary language code: akk
+lang-akk-obb,Old Babylonian,,lang-akk,,Wiktionary language code: akk-obb; etymology-only
+lang-aln,Gheg Albanian,,lang-sq,,Wiktionary language code: aln; etymology-only
+lang-alq,Algonquin,,lang-fam-alg,,Wiktionary language code: alq
+lang-am,Amharic,,lang-fam-sem-eth,,Wiktionary language code: am
+lang-ang,Old English,,lang-fam-gmw-ang,,Wiktionary language code: ang
+lang-ar,Arabic,,lang-fam-sem-arb,,Wiktionary language code: ar
+lang-arc,Aramaic,,lang-fam-sem-ara,,Wiktionary language code: arc
+lang-arc-bib,Biblical Aramaic,,lang-arc,,Wiktionary language code: arc-bib; etymology-only
+lang-arc-imp,Imperial Aramaic,,lang-arc,,Wiktionary language code: arc-imp; etymology-only
+lang-arc-jla,Jewish Literary Aramaic,,lang-arc,,Wiktionary language code: arc-jla; etymology-only
+lang-arc-nab,Nabataean Aramaic,,lang-arc,,Wiktionary language code: arc-nab; etymology-only
+lang-ask,Ashkun,,lang-fam-nur-sou,,Wiktionary language code: ask
+lang-ast,Asturian,,lang-fam-roa-asl,,Wiktionary language code: ast
+lang-axm,Middle Armenian,,lang-fam-hyx,,Wiktionary language code: axm
+lang-bal,Baluchi,,lang-fam-ira-nwi,,Wiktionary language code: bal
+lang-bat-pro,Proto-Baltic,,lang-ine-bsl-pro,,Wiktionary language code: bat-pro; etymology-only
+lang-be,Belarusian,,lang-fam-zle,,Wiktionary language code: be
+lang-ber-pro,Proto-Berber,,lang-fam-ber,,Wiktionary language code: ber-pro; reconstructed
+lang-bg,Bulgarian,,lang-fam-zls,,Wiktionary language code: bg
+lang-bn,Bengali,,lang-fam-inc-bas,,Wiktionary language code: bn
+lang-br,Breton,,lang-fam-cel-brs,,Wiktionary language code: br
+lang-bsh,Kamkata-viri,,lang-fam-nur-nor,,Wiktionary language code: bsh
+lang-ca,Catalan,,lang-fam-roa-ocr,,Wiktionary language code: ca
+lang-ccs-pro,Proto-Kartvelian,,lang-fam-ccs,,Wiktionary language code: ccs-pro; reconstructed
+lang-ce,Chechen,,lang-fam-cau-vay,,Wiktionary language code: ce
+lang-cel-bry-pro,Proto-Brythonic,,lang-fam-cel-bry,,Wiktionary language code: cel-bry-pro
+lang-cel-gal,Gallaecian,,lang-fam-cel-his,,Wiktionary language code: cel-gal
+lang-cel-gau,Gaulish,,lang-fam-cel,,Wiktionary language code: cel-gau
+lang-cel-pro,Proto-Celtic,,lang-fam-cel,,Wiktionary language code: cel-pro; reconstructed
+lang-ch,Chamorro,,lang-fam-poz,,Wiktionary language code: ch
+lang-cmn,Mandarin,,lang-fam-zhx-man,,Wiktionary language code: cmn
+lang-cms,Messapic,,lang-fam-ine,,Wiktionary language code: cms
+lang-co,Corsican,,lang-fam-roa-itr,,Wiktionary language code: co
+lang-cop,Coptic,,lang-fam-egx,,Wiktionary language code: cop
+lang-cs,Czech,,lang-fam-zlw,,Wiktionary language code: cs
+lang-cu,Old Church Slavonic,,lang-fam-zls,,Wiktionary language code: cu
+lang-cy,Welsh,,lang-fam-cel-brw,,Wiktionary language code: cy
+lang-da,Danish,,lang-fam-gmq-eas,,Wiktionary language code: da
+lang-ddo,Tsez,,lang-fam-cau-wts,,Wiktionary language code: ddo
+lang-de,German,,lang-fam-gmw-hgm,,Wiktionary language code: de
+lang-dum,Middle Dutch,,lang-fam-gmw-frk,,Wiktionary language code: dum
+lang-dv,Dhivehi,,lang-fam-inc-ins,,Wiktionary language code: dv
+lang-egx-dem,Demotic Egyptian,,lang-fam-egx,,Wiktionary language code: egx-dem
+lang-egy,Egyptian,,lang-fam-egx,,Wiktionary language code: egy
+lang-egy-lat,Late Egyptian,,lang-egy,,Wiktionary language code: egy-lat; etymology-only
+lang-el,Greek,,lang-fam-grk,,Wiktionary language code: el
+lang-el-kth,Katharevousa,,lang-el,,Wiktionary language code: el-kth; etymology-only
+lang-elx,Elamite,,lang-fam-qfa-iso,,Wiktionary language code: elx
+lang-en,English,,lang-fam-gmw-ang,,Wiktionary language code: en
+lang-en-GB,British English,,lang-en,,Wiktionary language code: en-GB; etymology-only
+lang-enm,Middle English,,lang-fam-gmw-ang,,Wiktionary language code: enm
+lang-es,Spanish,,lang-fam-roa-cas,,Wiktionary language code: es
+lang-es-MX,Mexican Spanish,,lang-es,,Wiktionary language code: es-MX; etymology-only
+lang-ett,Etruscan,,lang-fam-qfa-tyn,,Wiktionary language code: ett
+lang-eu,Basque,,lang-fam-euq,,Wiktionary language code: eu
+lang-euq-pro,Proto-Basque,,lang-fam-euq,,Wiktionary language code: euq-pro; reconstructed
+lang-fa,Persian,,lang-fam-ira-swi,,Wiktionary language code: fa
+lang-fa-cls,Classical Persian,,lang-fa,,Wiktionary language code: fa-cls; etymology-only
+lang-fa-ira,Iranian Persian,,lang-fa,,Wiktionary language code: fa-ira; etymology-only
+lang-fam-aav,Austroasiatic,,,,Wiktionary language code: aav; family
+lang-fam-afa,Afroasiatic,,,,Wiktionary language code: afa; family
+lang-fam-alg,Algonquian,,lang-fam-aql,,Wiktionary language code: alg; family
+lang-fam-alv,Atlantic-Congo,,lang-fam-nic,,Wiktionary language code: alv; family
+lang-fam-aql,Algic,,,,Wiktionary language code: aql; family
+lang-fam-awd,Arawak,,,,Wiktionary language code: awd; family
+lang-fam-awd-taa,Ta-Arawak,,lang-fam-awd,,Wiktionary language code: awd-taa; family
+lang-fam-azc,Uto-Aztecan,,,,Wiktionary language code: azc; family
+lang-fam-azc-nah,Nahuan,,lang-fam-azc,,Wiktionary language code: azc-nah; family
+lang-fam-bat,Baltic,,lang-fam-ine-bsl,,Wiktionary language code: bat; family
+lang-fam-bat-eas,East Baltic,,lang-fam-bat,,Wiktionary language code: bat-eas; family
+lang-fam-bat-wes,West Baltic,,lang-fam-bat,,Wiktionary language code: bat-wes; family
+lang-fam-ber,Berber,,lang-fam-afa,,Wiktionary language code: ber; family
+lang-fam-bnt,Bantu,,lang-fam-nic-bds,,Wiktionary language code: bnt; family
+lang-fam-bnt-bne,Northeast Bantu,,lang-fam-bnt,,Wiktionary language code: bnt-bne; family
+lang-fam-bnt-glb,Great Lakes Bantu,,lang-fam-bnt-bne,,Wiktionary language code: bnt-glb; family
+lang-fam-bnt-ncb,Northeast Coast Bantu,,lang-fam-bnt-bne,,Wiktionary language code: bnt-ncb; family
+lang-fam-bnt-nyg,Nyoro-Ganda,,lang-fam-bnt-glb,,Wiktionary language code: bnt-nyg; family
+lang-fam-bnt-sab,Sabaki,,lang-fam-bnt-ncb,,Wiktionary language code: bnt-sab; family
+lang-fam-bnt-swh,Swahili,,lang-fam-bnt-sab,,Wiktionary language code: bnt-swh; family
+lang-fam-cau-esm,Eastern Samur,,lang-fam-cau-sam,,Wiktionary language code: cau-esm; family
+lang-fam-cau-ets,East Tsezian,,lang-fam-cau-tsz,,Wiktionary language code: cau-ets; family
+lang-fam-cau-lzg,Lezghian,,lang-fam-cau-nec,,Wiktionary language code: cau-lzg; family
+lang-fam-cau-nec,Northeast Caucasian,,,,Wiktionary language code: cau-nec; family
+lang-fam-cau-nkh,Nakh,,lang-fam-cau-nec,,Wiktionary language code: cau-nkh; family
+lang-fam-cau-nwc,Northwest Caucasian,,,,Wiktionary language code: cau-nwc; family
+lang-fam-cau-sam,Samur,,lang-fam-cau-lzg,,Wiktionary language code: cau-sam; family
+lang-fam-cau-tsz,Tsezian,,lang-fam-cau-nec,,Wiktionary language code: cau-tsz; family
+lang-fam-cau-vay,Vainakh,,lang-fam-cau-nkh,,Wiktionary language code: cau-vay; family
+lang-fam-cau-wts,West Tsezian,,lang-fam-cau-tsz,,Wiktionary language code: cau-wts; family
+lang-fam-ccs,Kartvelian,,,,Wiktionary language code: ccs; family
+lang-fam-ccs-gzn,Georgian-Zan,,lang-fam-ccs,,Wiktionary language code: ccs-gzn; family
+lang-fam-cel,Celtic,,lang-fam-ine,,Wiktionary language code: cel; family
+lang-fam-cel-brs,Southwestern Brythonic,,lang-fam-cel-bry,,Wiktionary language code: cel-brs; family
+lang-fam-cel-brw,Western Brythonic,,lang-fam-cel-bry,,Wiktionary language code: cel-brw; family
+lang-fam-cel-bry,Brythonic,,lang-fam-cel-ins,,Wiktionary language code: cel-bry; family
+lang-fam-cel-gae,Goidelic,,lang-fam-cel-ins,,Wiktionary language code: cel-gae; family
+lang-fam-cel-his,Hispano-Celtic,,lang-fam-cel,,Wiktionary language code: cel-his; family
+lang-fam-cel-ins,Insular Celtic,,lang-fam-cel,,Wiktionary language code: cel-ins; family
+lang-fam-cus,Cushitic,,lang-fam-afa,,Wiktionary language code: cus; family
+lang-fam-cus-eas,East Cushitic,,lang-fam-cus,,Wiktionary language code: cus-eas; family
+lang-fam-cus-som,Somaloid,,lang-fam-cus-eas,,Wiktionary language code: cus-som; family
+lang-fam-dra,Dravidian,,,,Wiktionary language code: dra; family
+lang-fam-dra-kan,Kannadoid,,lang-fam-dra-tkn,,Wiktionary language code: dra-kan; family
+lang-fam-dra-sdo,South Dravidian I,,,,Wiktionary language code: dra-sdo; family
+lang-fam-dra-tam,Tamiloid,,lang-fam-dra-tml,,Wiktionary language code: dra-tam; family
+lang-fam-dra-tkd,Tamil-Kodagu,,lang-fam-dra-tkn,,Wiktionary language code: dra-tkd; family
+lang-fam-dra-tkn,Tamil-Kannada,,lang-fam-dra-sdo,,Wiktionary language code: dra-tkn; family
+lang-fam-dra-tml,Tamil-Malayalam,,lang-fam-dra-tkd,,Wiktionary language code: dra-tml; family
+lang-fam-egx,Egyptian,,lang-fam-afa,,Wiktionary language code: egx; family
+lang-fam-euq,Vasconic,,,,Wiktionary language code: euq; family
+lang-fam-gem,Germanic,,lang-fam-ine,,Wiktionary language code: gem; family
+lang-fam-gme,East Germanic,,lang-fam-gem,,Wiktionary language code: gme; family
+lang-fam-gmq,North Germanic,,lang-fam-gem,,Wiktionary language code: gmq; family
+lang-fam-gmq-eas,East Scandinavian,,lang-fam-gmq,,Wiktionary language code: gmq-eas; family
+lang-fam-gmq-ins,Insular Scandinavian,,lang-fam-gmq-wes,,Wiktionary language code: gmq-ins; family
+lang-fam-gmq-wes,West Scandinavian,,lang-fam-gmq,,Wiktionary language code: gmq-wes; family
+lang-fam-gmw,West Germanic,,lang-fam-gem,,Wiktionary language code: gmw; family
+lang-fam-gmw-afr,Anglo-Frisian,,lang-fam-gmw-nsg,,Wiktionary language code: gmw-afr; family
+lang-fam-gmw-ang,Anglic,,lang-fam-gmw-afr,,Wiktionary language code: gmw-ang; family
+lang-fam-gmw-fri,Frisian,,lang-fam-gmw-afr,,Wiktionary language code: gmw-fri; family
+lang-fam-gmw-frk,Low Franconian,,lang-fam-gmw,,Wiktionary language code: gmw-frk; family
+lang-fam-gmw-hgm,High German,,lang-fam-gmw,,Wiktionary language code: gmw-hgm; family
+lang-fam-gmw-lgm,Low German,,lang-fam-gmw-nsg,,Wiktionary language code: gmw-lgm; family
+lang-fam-gmw-nsg,North Sea Germanic,,lang-fam-gmw,,Wiktionary language code: gmw-nsg; family
+lang-fam-grk,Hellenic,,lang-fam-ine,,Wiktionary language code: grk; family
+lang-fam-hyx,Armenian,,lang-fam-ine,,Wiktionary language code: hyx; family
+lang-fam-iir,Indo-Iranian,,lang-fam-ine,,Wiktionary language code: iir; family
+lang-fam-iir-nur,Nuristani,,lang-fam-iir,,Wiktionary language code: iir-nur; family
+lang-fam-inc,Indo-Aryan,,lang-fam-iir,,Wiktionary language code: inc; family
+lang-fam-inc-bas,Bengali-Assamese,,lang-fam-inc-eas,,Wiktionary language code: inc-bas; family
+lang-fam-inc-cen,Central Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-cen; family
+lang-fam-inc-chi,Chitrali,,lang-fam-inc-dar,,Wiktionary language code: inc-chi; family
+lang-fam-inc-dar,Dardic,,lang-fam-inc,,Wiktionary language code: inc-dar; family
+lang-fam-inc-eas,Eastern Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-eas; family
+lang-fam-inc-hiw,Western Hindi,,lang-fam-inc-cen,,Wiktionary language code: inc-hiw; family
+lang-fam-inc-hnd,Hindustani,,lang-fam-inc-hiw,,Wiktionary language code: inc-hnd; family
+lang-fam-inc-ins,Insular Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-ins; family
+lang-fam-inc-mid,Middle Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-mid; family
+lang-fam-inc-nor,Northern Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-nor; family
+lang-fam-inc-nwe,Northwestern Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-nwe; family
+lang-fam-inc-pae,Eastern Pahari,,lang-fam-inc-pah,,Wiktionary language code: inc-pae; family
+lang-fam-inc-pah,Pahari,,lang-fam-inc-nor,,Wiktionary language code: inc-pah; family
+lang-fam-inc-pan,Punjabic,,lang-fam-inc-nwe,,Wiktionary language code: inc-pan; family
+lang-fam-ine,Indo-European,,,,Wiktionary language code: ine; family
+lang-fam-ine-ana,Anatolian,,lang-fam-ine,,Wiktionary language code: ine-ana; family
+lang-fam-ine-bsl,Balto-Slavic,,lang-fam-ine,,Wiktionary language code: ine-bsl; family
+lang-fam-ine-luw,Luwic,,lang-fam-ine-ana,,Wiktionary language code: ine-luw; family
+lang-fam-ine-toc,Tocharian,,lang-fam-ine,,Wiktionary language code: ine-toc; family
+lang-fam-ira,Iranian,,lang-fam-iir,,Wiktionary language code: ira; family
+lang-fam-ira-cen,Central Iranian,,lang-fam-ira,,Wiktionary language code: ira-cen; family
+lang-fam-ira-csp,Caspian,,lang-fam-ira-mpr,,Wiktionary language code: ira-csp; family
+lang-fam-ira-lur,Luric,,,,Wiktionary language code: ira-lur; family
+lang-fam-ira-mid,Middle Iranian,,lang-fam-ira,,Wiktionary language code: ira-mid; family
+lang-fam-ira-mpr,Medo-Parthian,,lang-fam-ira-nwi,,Wiktionary language code: ira-mpr; family
+lang-fam-ira-msh,Mazanderani-Shahmirzadi,,lang-fam-ira-csp,,Wiktionary language code: ira-msh; family
+lang-fam-ira-nei,Northeastern Iranian,,lang-fam-ira,,Wiktionary language code: ira-nei; family
+lang-fam-ira-nwi,Northwestern Iranian,,lang-fam-ira-wes,,Wiktionary language code: ira-nwi; family
+lang-fam-ira-old,Old Iranian,,lang-fam-ira,,Wiktionary language code: ira-old; family
+lang-fam-ira-pat,Pathan,,lang-fam-ira-sei,,Wiktionary language code: ira-pat; family
+lang-fam-ira-sbc,Sogdo-Bactrian,,lang-fam-ira-nei,,Wiktionary language code: ira-sbc; family
+lang-fam-ira-sei,Southeastern Iranian,,lang-fam-ira,,Wiktionary language code: ira-sei; family
+lang-fam-ira-swi,Southwestern Iranian,,lang-fam-ira-wes,,Wiktionary language code: ira-swi; family
+lang-fam-ira-wes,Western Iranian,,lang-fam-ira,,Wiktionary language code: ira-wes; family
+lang-fam-iro,Iroquoian,,,,Wiktionary language code: iro; family
+lang-fam-iro-nor,North Iroquoian,,lang-fam-iro,,Wiktionary language code: iro-nor; family
+lang-fam-itc,Italic,,lang-fam-ine,,Wiktionary language code: itc; family
+lang-fam-itc-laf,Latino-Faliscan,,lang-fam-itc,,Wiktionary language code: itc-laf; family
+lang-fam-itc-sbl,Osco-Umbrian,,lang-fam-itc,,Wiktionary language code: itc-sbl; family
+lang-fam-jpx,Japonic,,,,Wiktionary language code: jpx; family
+lang-fam-ku,Kurdish,,lang-fam-ira-nwi,,Wiktionary language code: ku; family
+lang-fam-map,Austronesian,,,,Wiktionary language code: map; family
+lang-fam-mkh,Mon-Khmer,,lang-fam-aav,,Wiktionary language code: mkh; family
+lang-fam-mkh-kmr,Khmeric,,lang-fam-mkh,,Wiktionary language code: mkh-kmr; family
+lang-fam-mkh-vie,Vietic,,lang-fam-mkh,,Wiktionary language code: mkh-vie; family
+lang-fam-mun,Munda,,lang-fam-aav,,Wiktionary language code: mun; family
+lang-fam-nic,Niger-Congo,,,,Wiktionary language code: nic; family
+lang-fam-nic-bco,Benue-Congo,,lang-fam-nic-vco,,Wiktionary language code: nic-bco; family
+lang-fam-nic-bcr,Bantoid-Cross,,lang-fam-nic-bco,,Wiktionary language code: nic-bcr; family
+lang-fam-nic-bds,Southern Bantoid,,lang-fam-nic-bod,,Wiktionary language code: nic-bds; family
+lang-fam-nic-bod,Bantoid,,lang-fam-nic-bcr,,Wiktionary language code: nic-bod; family
+lang-fam-nic-vco,Volta-Congo,,lang-fam-alv,,Wiktionary language code: nic-vco; family
+lang-fam-nub,Nubian,,lang-fam-sdv-nes,,Wiktionary language code: nub; family
+lang-fam-nur-nor,Northern Nuristani,,lang-fam-iir-nur,,Wiktionary language code: nur-nor; family
+lang-fam-nur-sou,Southern Nuristani,,lang-fam-iir-nur,,Wiktionary language code: nur-sou; family
+lang-fam-poz,Malayo-Polynesian,,lang-fam-map,,Wiktionary language code: poz; family
+lang-fam-poz-mcm,Malayo-Chamic,,lang-fam-poz-msa,,Wiktionary language code: poz-mcm; family
+lang-fam-poz-mly,Malayic,,lang-fam-poz-mcm,,Wiktionary language code: poz-mly; family
+lang-fam-poz-msa,Malayo-Sumbawan,,lang-fam-poz,,Wiktionary language code: poz-msa; family
+lang-fam-qfa-bet,Be-Tai,,lang-fam-qfa-tak,,Wiktionary language code: qfa-bet; family
+lang-fam-qfa-hur,Hurro-Urartian,,,,Wiktionary language code: qfa-hur; family
+lang-fam-qfa-iso,isolate,,,,Wiktionary language code: qfa-iso; family
+lang-fam-qfa-kor,Koreanic,,,,Wiktionary language code: qfa-kor; family
+lang-fam-qfa-sub,substrate,,,,Wiktionary language code: qfa-sub; family
+lang-fam-qfa-tak,Kra-Dai,,,,Wiktionary language code: qfa-tak; family
+lang-fam-qfa-tyn,Tyrsenian,,,,Wiktionary language code: qfa-tyn; family
+lang-fam-qfa-unc,unclassifiable,,,,Wiktionary language code: qfa-unc; family
+lang-fam-qfa-xgs,Serbi-Mongolic,,,,Wiktionary language code: qfa-xgs; family
+lang-fam-qfa-xgx,Para-Mongolic,,lang-fam-qfa-xgs,,Wiktionary language code: qfa-xgx; family
+lang-fam-qwe,Quechuan,,,,Wiktionary language code: qwe; family
+lang-fam-roa,Romance,,lang-fam-itc,,Wiktionary language code: roa; family
+lang-fam-roa-asl,Asturleonese,,lang-fam-roa-ibe,,Wiktionary language code: roa-asl; family
+lang-fam-roa-cas,Castilian,,lang-fam-roa-ibe,,Wiktionary language code: roa-cas; family
+lang-fam-roa-eas,Eastern Romance,,lang-fam-roa,,Wiktionary language code: roa-eas; family
+lang-fam-roa-gap,Galician-Portuguese,,lang-fam-roa-ibe,,Wiktionary language code: roa-gap; family
+lang-fam-roa-gar,Gallo-Romance,,lang-fam-roa-wes,,Wiktionary language code: roa-gar; family
+lang-fam-roa-git,Gallo-Italic,,lang-fam-roa-gar,,Wiktionary language code: roa-git; family
+lang-fam-roa-grh,Gallo-Rhaetian,,lang-fam-roa-gar,,Wiktionary language code: roa-grh; family
+lang-fam-roa-ibe,Ibero-Romance,,lang-fam-roa-wes,,Wiktionary language code: roa-ibe; family
+lang-fam-roa-itd,Italo-Dalmatian,,lang-fam-roa-iwr,,Wiktionary language code: roa-itd; family
+lang-fam-roa-itr,Italo-Romance,,lang-fam-roa-itd,,Wiktionary language code: roa-itr; family
+lang-fam-roa-iwr,Italo-Western Romance,,lang-fam-roa,,Wiktionary language code: roa-iwr; family
+lang-fam-roa-ocr,Occitano-Romance,,lang-fam-roa-gar,,Wiktionary language code: roa-ocr; family
+lang-fam-roa-oil,Oïl,,lang-fam-roa-grh,,Wiktionary language code: roa-oil; family
+lang-fam-roa-sou,Southern Romance,,lang-fam-roa,,Wiktionary language code: roa-sou; family
+lang-fam-roa-wes,Western Romance,,lang-fam-roa-iwr,,Wiktionary language code: roa-wes; family
+lang-fam-sai-car,Cariban,,,,Wiktionary language code: sai-car; family
+lang-fam-sdv,Eastern Sudanic,,lang-fam-ssa,,Wiktionary language code: sdv; family
+lang-fam-sdv-nes,Northern Eastern Sudanic,,lang-fam-sdv,,Wiktionary language code: sdv-nes; family
+lang-fam-sem,Semitic,,lang-fam-afa,,Wiktionary language code: sem; family
+lang-fam-sem-ara,Aramaic,,lang-fam-sem-nwe,,Wiktionary language code: sem-ara; family
+lang-fam-sem-arb,Arabic,,lang-fam-sem-cen,,Wiktionary language code: sem-arb; family
+lang-fam-sem-are,Eastern Aramaic,,lang-fam-sem-ara,,Wiktionary language code: sem-are; family
+lang-fam-sem-can,Canaanite,,lang-fam-sem-nwe,,Wiktionary language code: sem-can; family
+lang-fam-sem-cen,Central Semitic,,lang-fam-sem-wes,,Wiktionary language code: sem-cen; family
+lang-fam-sem-eas,East Semitic,,lang-fam-sem,,Wiktionary language code: sem-eas; family
+lang-fam-sem-eth,Ethiopian Semitic,,lang-fam-sem-wes,,Wiktionary language code: sem-eth; family
+lang-fam-sem-nwe,Northwest Semitic,,lang-fam-sem-cen,,Wiktionary language code: sem-nwe; family
+lang-fam-sem-wes,West Semitic,,lang-fam-sem,,Wiktionary language code: sem-wes; family
+lang-fam-sit,Sino-Tibetan,,,,Wiktionary language code: sit; family
+lang-fam-sit-sba,Sino-Bai,,lang-fam-sit,,Wiktionary language code: sit-sba; family
+lang-fam-sla,Slavic,,lang-fam-ine-bsl,,Wiktionary language code: sla; family
+lang-fam-smi,Sami,,lang-fam-urj,,Wiktionary language code: smi; family
+lang-fam-sqj,Albanian,,lang-fam-ine,,Wiktionary language code: sqj; family
+lang-fam-ssa,Nilo-Saharan,,,,Wiktionary language code: ssa; family
+lang-fam-tai,Tai,,lang-fam-qfa-bet,,Wiktionary language code: tai; family
+lang-fam-tai-sap,Sapa-Southwestern Tai,,lang-fam-tai-wen,,Wiktionary language code: tai-sap; family
+lang-fam-tai-swe,Southwestern Tai,,lang-fam-tai-sap,,Wiktionary language code: tai-swe; family
+lang-fam-tai-wen,Wenma-Southwestern Tai,,lang-fam-tai,,Wiktionary language code: tai-wen; family
+lang-fam-trk,Turkic,,,,Wiktionary language code: trk; family
+lang-fam-trk-cmn,Common Turkic,,lang-fam-trk,,Wiktionary language code: trk-cmn; family
+lang-fam-trk-kar,Karluk,,lang-fam-trk-cmn,,Wiktionary language code: trk-kar; family
+lang-fam-trk-kbu,Kipchak-Bulgar,,lang-fam-trk-kip,,Wiktionary language code: trk-kbu; family
+lang-fam-trk-kip,Kipchak,,lang-fam-trk-cmn,,Wiktionary language code: trk-kip; family
+lang-fam-trk-kno,Kipchak-Nogai,,lang-fam-trk-kip,,Wiktionary language code: trk-kno; family
+lang-fam-trk-ogz,Oghuz,,lang-fam-trk-cmn,,Wiktionary language code: trk-ogz; family
+lang-fam-trk-sib,Siberian Turkic,,lang-fam-trk-cmn,,Wiktionary language code: trk-sib; family
+lang-fam-tup,Tupian,,,,Wiktionary language code: tup; family
+lang-fam-tup-gua,Tupi-Guarani,,lang-fam-tup,,Wiktionary language code: tup-gua; family
+lang-fam-urj,Uralic,,,,Wiktionary language code: urj; family
+lang-fam-urj-fin,Finnic,,lang-fam-urj,,Wiktionary language code: urj-fin; family
+lang-fam-urj-mdv,Mordvinic,,lang-fam-urj,,Wiktionary language code: urj-mdv; family
+lang-fam-urj-ugr,Ugric,,lang-fam-urj,,Wiktionary language code: urj-ugr; family
+lang-fam-xgn,Mongolic,,lang-fam-qfa-xgs,,Wiktionary language code: xgn; family
+lang-fam-xgn-cen,Central Mongolic,,lang-fam-xgn,,Wiktionary language code: xgn-cen; family
+lang-fam-xme,Median,,lang-fam-ira-mpr,,Wiktionary language code: xme; family
+lang-fam-xsc,Scythian,,lang-fam-ira-nei,,Wiktionary language code: xsc; family
+lang-fam-xsc-sak,Saka,,lang-fam-xsc-skw,,Wiktionary language code: xsc-sak; family
+lang-fam-xsc-sar,Sarmatian,,lang-fam-xsc,,Wiktionary language code: xsc-sar; family
+lang-fam-xsc-skw,Saka-Wakhi,,lang-fam-xsc,,Wiktionary language code: xsc-skw; family
+lang-fam-zhx,Sinitic,,lang-fam-sit-sba,,Wiktionary language code: zhx; family
+lang-fam-zhx-com,Coastal Min,,lang-fam-zhx-min,,Wiktionary language code: zhx-com; family
+lang-fam-zhx-man,Mandarinic,,lang-fam-zhx,,Wiktionary language code: zhx-man; family
+lang-fam-zhx-min,Min,,lang-fam-zhx,,Wiktionary language code: zhx-min; family
+lang-fam-zhx-nan,Southern Min,,lang-fam-zhx-com,,Wiktionary language code: zhx-nan; family
+lang-fam-zle,East Slavic,,lang-fam-sla,,Wiktionary language code: zle; family
+lang-fam-zls,South Slavic,,lang-fam-sla,,Wiktionary language code: zls; family
+lang-fam-zlw,West Slavic,,lang-fam-sla,,Wiktionary language code: zlw; family
+lang-fam-zlw-lch,Lechitic,,lang-fam-zlw,,Wiktionary language code: zlw-lch; family
+lang-fam-zlw-pom,Pomeranian,,lang-fam-zlw-lch,,Wiktionary language code: zlw-pom; family
+lang-fi,Finnish,,lang-fam-urj-fin,,Wiktionary language code: fi
+lang-fos,Siraya,,lang-fam-map,,Wiktionary language code: fos
+lang-fr,French,,lang-fam-roa-oil,,Wiktionary language code: fr
+lang-frk,Frankish,,lang-gmw-pro,,Wiktionary language code: frk; etymology-only
+lang-frm,Middle French,,lang-fam-roa-oil,,Wiktionary language code: frm
+lang-fro,Old French,,lang-fam-roa-oil,,Wiktionary language code: fro
+lang-fro-nor,Old Northern French,,lang-fro,,Wiktionary language code: fro-nor; etymology-only
+lang-frr,North Frisian,,lang-fam-gmw-fri,,Wiktionary language code: frr
+lang-fy,West Frisian,,lang-fam-gmw-fri,,Wiktionary language code: fy
+lang-ga,Irish,,lang-fam-cel-gae,,Wiktionary language code: ga
+lang-gd,Scottish Gaelic,,lang-fam-cel-gae,,Wiktionary language code: gd
+lang-gem-pro,Proto-Germanic,,lang-fam-gem,,Wiktionary language code: gem-pro; reconstructed
+lang-gem-sue,Suevic,,lang-gmw-pro,,Wiktionary language code: gem-sue; etymology-only
+lang-gez,Ge'ez,,lang-fam-sem-eth,,Wiktionary language code: gez
+lang-gkm,Byzantine Greek,,lang-grc,,Wiktionary language code: gkm; etymology-only
+lang-gl,Galician,,lang-fam-roa-gap,,Wiktionary language code: gl
+lang-gme-bur,Burgundian,,lang-fam-gme,,Wiktionary language code: gme-bur
+lang-gmh,Middle High German,,lang-fam-gmw-hgm,,Wiktionary language code: gmh
+lang-gml,Middle Low German,,lang-fam-gmw-lgm,,Wiktionary language code: gml
+lang-gmq-oda,Old Danish,,lang-fam-gmq-eas,,Wiktionary language code: gmq-oda
+lang-gmq-osw,Old Swedish,,lang-fam-gmq-eas,,Wiktionary language code: gmq-osw
+lang-gmw-pro,Proto-West Germanic,,lang-fam-gmw,,Wiktionary language code: gmw-pro; reconstructed
+lang-gmy,Mycenaean Greek,,lang-fam-grk,,Wiktionary language code: gmy
+lang-goh,Old High German,,lang-fam-gmw-hgm,,Wiktionary language code: goh
+lang-got,Gothic,,lang-fam-gme,,Wiktionary language code: got
+lang-grc,Ancient Greek,,lang-fam-grk,,Wiktionary language code: grc
+lang-grc-aeo,Aeolic Greek,,lang-grc,,Wiktionary language code: grc-aeo; etymology-only
+lang-grc-arp,Arcadocypriot Greek,,lang-grc,,Wiktionary language code: grc-arp; etymology-only
+lang-grc-att,Attic Greek,,lang-grc,,Wiktionary language code: grc-att; etymology-only
+lang-grc-dor,Doric Greek,,lang-grc,,Wiktionary language code: grc-dor; etymology-only
+lang-grc-epi,Epic Greek,,lang-grc,,Wiktionary language code: grc-epi; etymology-only
+lang-grc-ion,Ionic Greek,,lang-grc,,Wiktionary language code: grc-ion; etymology-only
+lang-grc-koi,Koine Greek,,lang-grc,,Wiktionary language code: grc-koi; etymology-only
+lang-grc-kre,Cretan Ancient Greek,,,,Wiktionary language code: grc-kre; etymology-only
+lang-grk-ita,Italiot Greek,,lang-fam-grk,,Wiktionary language code: grk-ita
+lang-grk-pro,Proto-Hellenic,,lang-fam-grk,,Wiktionary language code: grk-pro; reconstructed
+lang-hbo,Biblical Hebrew,,lang-he,,Wiktionary language code: hbo; etymology-only
+lang-he,Hebrew,,lang-fam-sem-can,,Wiktionary language code: he
+lang-he-IL,Israeli Hebrew,,lang-he,,Wiktionary language code: he-IL; etymology-only
+lang-he-med,Medieval Hebrew,,lang-he,,Wiktionary language code: he-med; etymology-only
+lang-he-mis,Mishnaic Hebrew,,lang-he,,Wiktionary language code: he-mis; etymology-only
+lang-hi,Hindi,,lang-fam-inc-hnd,,Wiktionary language code: hi
+lang-hit,Hittite,,lang-fam-ine-ana,,Wiktionary language code: hit
+lang-hu,Hungarian,,lang-fam-urj-ugr,,Wiktionary language code: hu
+lang-hy,Armenian,,lang-fam-hyx,,Wiktionary language code: hy
+lang-iir-nur-pro,Proto-Nuristani,,lang-fam-iir-nur,,Wiktionary language code: iir-nur-pro; reconstructed
+lang-iir-pro,Proto-Indo-Iranian,,lang-fam-iir,,Wiktionary language code: iir-pro; reconstructed
+lang-ims,Marsian,,lang-fam-itc-sbl,,Wiktionary language code: ims
+lang-inc-pro,Proto-Indo-Aryan,,lang-fam-inc,,Wiktionary language code: inc-pro; reconstructed
+lang-ine-bsl-pro,Proto-Balto-Slavic,,lang-fam-ine-bsl,,Wiktionary language code: ine-bsl-pro; reconstructed
+lang-ine-pro,Proto-Indo-European,,lang-fam-ine,,Wiktionary language code: ine-pro; reconstructed
+lang-ine-toc-pro,Proto-Tocharian,,lang-fam-ine-toc,,Wiktionary language code: ine-toc-pro; reconstructed
+lang-ira-pro,Proto-Iranian,,lang-fam-ira,,Wiktionary language code: ira-pro; reconstructed
+lang-is,Icelandic,,lang-fam-gmq-ins,,Wiktionary language code: is
+lang-it,Italian,,lang-fam-roa-itr,,Wiktionary language code: it
+lang-itc-ala,Archaic Latin,,lang-la,,Wiktionary language code: itc-ala; etymology-only
+lang-itc-ola,Old Latin,,lang-la,,Wiktionary language code: itc-ola; etymology-only
+lang-itc-pra,Praenestine,,lang-la,,Wiktionary language code: itc-pra; etymology-only
+lang-itc-pro,Proto-Italic,,lang-fam-itc,,Wiktionary language code: itc-pro; reconstructed
+lang-itc-psa,Pre-Samnite,,lang-fam-itc-sbl,,Wiktionary language code: itc-psa
+lang-ja,Japanese,,lang-fam-jpx,,Wiktionary language code: ja
+lang-jpa,Jewish Palestinian Aramaic,,lang-arc,,Wiktionary language code: jpa; etymology-only
+lang-jrb,Judeo-Arabic,,lang-ar,,Wiktionary language code: jrb; etymology-only
+lang-ka,Georgian,,lang-fam-ccs-gzn,,Wiktionary language code: ka
+lang-kab,Kabyle,,lang-fam-ber,,Wiktionary language code: kab
+lang-kap,Bezhta,,lang-fam-cau-ets,,Wiktionary language code: kap
+lang-kho,Khotanese,,lang-fam-xsc-sak,,Wiktionary language code: kho
+lang-khw,Khowar,,lang-fam-inc-chi,,Wiktionary language code: khw
+lang-kk,Kazakh,,lang-fam-trk-kno,,Wiktionary language code: kk
+lang-km,Khmer,,lang-fam-mkh-kmr,,Wiktionary language code: km
+lang-kmr,Northern Kurdish,,lang-fam-ku,,Wiktionary language code: kmr
+lang-kn,Kannada,,lang-fam-dra-kan,,Wiktionary language code: kn
+lang-ko,Korean,,lang-fam-qfa-kor,,Wiktionary language code: ko
+lang-kw,Cornish,,lang-fam-cel-brs,,Wiktionary language code: kw
+lang-la,Latin,,lang-fam-itc-laf,,Wiktionary language code: la
+lang-la-cla,Classical Latin,,lang-la,,Wiktionary language code: la-cla; etymology-only
+lang-la-ecc,Ecclesiastical Latin,,lang-la,,Wiktionary language code: la-ecc; etymology-only
+lang-la-eme,Early Medieval Latin,,lang-la-med,,Wiktionary language code: la-eme; etymology-only
+lang-la-lat,Late Latin,,lang-la,,Wiktionary language code: la-lat; etymology-only
+lang-la-med,Medieval Latin,,lang-la,,Wiktionary language code: la-med; etymology-only
+lang-la-new,New Latin,,lang-la,,Wiktionary language code: la-new; etymology-only
+lang-la-vul,Vulgar Latin,,lang-la-cla,,Wiktionary language code: la-vul; etymology-only
+lang-lg,Luganda,,lang-fam-bnt-nyg,,Wiktionary language code: lg
+lang-li,Limburgish,,lang-fam-gmw-frk,,Wiktionary language code: li
+lang-lij,Ligurian,,lang-fam-roa-git,,Wiktionary language code: lij
 lang-linear-a,Linear A (unknown),,,Bronze Age,Language of the Linear A inscriptions; undeciphered
+lang-lng,Lombardic,,lang-goh,,Wiktionary language code: lng; etymology-only
+lang-lo,Lao,,lang-fam-tai-swe,,Wiktionary language code: lo
+lang-lrc,Northern Luri,,lang-fam-ira-lur,,Wiktionary language code: lrc
+lang-lre,Laurentian,,lang-fam-iro-nor,,Wiktionary language code: lre
+lang-lt,Lithuanian,,lang-fam-bat-eas,,Wiktionary language code: lt
+lang-ltg,Latgalian,,lang-fam-bat-eas,,Wiktionary language code: ltg
+lang-lv,Latvian,,lang-fam-bat-eas,,Wiktionary language code: lv
+lang-lzh,Classical Chinese,,lang-fam-zhx,,Wiktionary language code: lzh
+lang-lzh-lit,Literary Chinese,,lang-lzh,,Wiktionary language code: lzh-lit; etymology-only
+lang-mdf,Moksha,,lang-fam-urj-mdv,,Wiktionary language code: mdf
+lang-mga,Middle Irish,,lang-fam-cel-gae,,Wiktionary language code: mga
+lang-mis-tdl,Turdulian,,,,Wiktionary language code: mis-tdl
+lang-mn,Mongolian,,lang-fam-xgn-cen,,Wiktionary language code: mn
+lang-ms,Malay,,lang-fam-poz-mly,,Wiktionary language code: ms
+lang-ms-old,Old Malay,,lang-ms,,Wiktionary language code: ms-old; etymology-only
+lang-mt,Maltese,,lang-fam-sem-arb,,Wiktionary language code: mt
+lang-mul,Translingual,,,,Wiktionary language code: mul
+lang-mul-tax,taxonomic name,,lang-mul,,Wiktionary language code: mul-tax; etymology-only
+lang-mun-pro,Proto-Munda,,lang-fam-mun,,Wiktionary language code: mun-pro; reconstructed
+lang-myv,Erzya,,lang-fam-urj-mdv,,Wiktionary language code: myv
+lang-mzn,Mazanderani,,lang-fam-ira-msh,,Wiktionary language code: mzn
+lang-nan-hbl,Hokkien,,lang-fam-zhx-nan,,Wiktionary language code: nan-hbl
+lang-nap,Neapolitan,,lang-fam-roa-itr,,Wiktionary language code: nap
+lang-nb,Norwegian Bokmål,,lang-fam-gmq,,Wiktionary language code: nb
+lang-nci,Classical Nahuatl,,lang-fam-azc-nah,,Wiktionary language code: nci
+lang-nds,Low German,,lang-fam-gmw-lgm,,Wiktionary language code: nds
+lang-nds-de,German Low German,,lang-nds,,Wiktionary language code: nds-de; etymology-only
+lang-ne,Nepali,,lang-fam-inc-pae,,Wiktionary language code: ne
+lang-nl,Dutch,,lang-fam-gmw-frk,,Wiktionary language code: nl
+lang-nn,Norwegian Nynorsk,,lang-fam-gmq-wes,,Wiktionary language code: nn
+lang-no,Norwegian,,lang-fam-gmq-wes,,Wiktionary language code: no
+lang-non,Old Norse,,lang-fam-gmq,,Wiktionary language code: non
+lang-non-oen,Old East Norse,,lang-non,,Wiktionary language code: non-oen; etymology-only
+lang-nrf,Norman,,lang-fam-roa-oil,,Wiktionary language code: nrf
+lang-nrp,North Picene,,lang-fam-qfa-unc,,Wiktionary language code: nrp
+lang-nxm,Numidian,,lang-fam-afa,,Wiktionary language code: nxm
+lang-obt,Old Breton,,lang-fam-cel-brs,,Wiktionary language code: obt
+lang-oc,Occitan,,lang-fam-roa-ocr,,Wiktionary language code: oc
+lang-oc-pro,Provençal,,lang-oc,,Wiktionary language code: oc-pro; etymology-only
+lang-och,Old Chinese,,lang-fam-zhx,,Wiktionary language code: och
+lang-oco,Old Cornish,,lang-fam-cel-brs,,Wiktionary language code: oco
+lang-odt,Old Dutch,,lang-fam-gmw-frk,,Wiktionary language code: odt
+lang-ofs,Old Frisian,,lang-fam-gmw-fri,,Wiktionary language code: ofs
+lang-oge,Old Georgian,,lang-fam-ccs-gzn,,Wiktionary language code: oge
+lang-ohu,Old Hungarian,,lang-fam-urj-ugr,,Wiktionary language code: ohu
+lang-olt,Old Lithuanian,,lang-fam-bat-eas,,Wiktionary language code: olt
+lang-or,Odia,,lang-fam-inc-eas,,Wiktionary language code: or
+lang-orv,Old East Slavic,,lang-fam-zle,,Wiktionary language code: orv
+lang-os,Ossetian,,lang-fam-xsc-sar,,Wiktionary language code: os
+lang-os-iro,Iron Ossetian,,lang-os,,Wiktionary language code: os-iro; etymology-only
+lang-osc,Oscan,,lang-fam-itc-sbl,,Wiktionary language code: osc
+lang-osc-sam,Samnite,,lang-osc,,Wiktionary language code: osc-sam; etymology-only
+lang-osp,Old Spanish,,lang-fam-roa-cas,,Wiktionary language code: osp
+lang-osx,Old Saxon,,lang-fam-gmw-lgm,,Wiktionary language code: osx
+lang-ota,Ottoman Turkish,,lang-fam-trk-ogz,,Wiktionary language code: ota
+lang-otk,Old Turkic,,lang-fam-trk-sib,,Wiktionary language code: otk
+lang-oty,Old Tamil,,lang-fam-dra-tam,,Wiktionary language code: oty
+lang-owl,Old Welsh,,lang-fam-cel-brw,,Wiktionary language code: owl
+lang-pa,Punjabi,,lang-fam-inc-pan,,Wiktionary language code: pa
+lang-pal,Middle Persian,,lang-fam-ira-swi,,Wiktionary language code: pal
+lang-pcd,Picard,,lang-fam-roa-oil,,Wiktionary language code: pcd
+lang-peo,Old Persian,,lang-fam-ira-swi,,Wiktionary language code: peo
+lang-pgl,Primitive Irish,,lang-fam-cel-gae,,Wiktionary language code: pgl
+lang-pgn,Paelignian,,lang-fam-itc-sbl,,Wiktionary language code: pgn
+lang-phn,Phoenician,,lang-fam-sem-can,,Wiktionary language code: phn
+lang-pi,Pali,,lang-fam-inc-mid,,Wiktionary language code: pi
+lang-pl,Polish,,lang-fam-zlw-lch,,Wiktionary language code: pl
+lang-plq,Palaic,,lang-fam-ine-ana,,Wiktionary language code: plq
+lang-pms,Piedmontese,,lang-fam-roa-git,,Wiktionary language code: pms
+lang-pra,Prakrit,,lang-fam-inc-mid,,Wiktionary language code: pra
+lang-pra-sau,Sauraseni Prakrit,,lang-pra,,Wiktionary language code: pra-sau; etymology-only
+lang-prg,Old Prussian,,lang-fam-bat-wes,,Wiktionary language code: prg
+lang-prn,Prasuni,,lang-fam-nur-nor,,Wiktionary language code: prn
+lang-pro,Old Occitan,,lang-fam-roa-ocr,,Wiktionary language code: pro
+lang-ps,Pashto,,lang-fam-ira-pat,,Wiktionary language code: ps
+lang-pt,Portuguese,,lang-fam-roa-gap,,Wiktionary language code: pt
+lang-pt-BR,Brazilian Portuguese,,lang-pt,,Wiktionary language code: pt-BR; etymology-only
+lang-qsb-bal,Paleo-Balkan,,lang-und,,Wiktionary language code: qsb-bal; etymology-only
+lang-qsb-grc,Pre-Greek,,lang-und,,Wiktionary language code: qsb-grc; etymology-only
+lang-qsb-ibe,Paleo-Hispanic,,lang-und,,Wiktionary language code: qsb-ibe; etymology-only
+lang-qu,Quechua,,lang-fam-qwe,,Wiktionary language code: qu
+lang-ro,Romanian,,lang-fam-roa-eas,,Wiktionary language code: ro
+lang-roa-oca,Old Catalan,,lang-fam-roa-ocr,,Wiktionary language code: roa-oca
+lang-roa-oit,Old Italian,,lang-it,,Wiktionary language code: roa-oit; etymology-only
+lang-ru,Russian,,lang-fam-zle,,Wiktionary language code: ru
+lang-rup,Aromanian,,lang-fam-roa-eas,,Wiktionary language code: rup
+lang-sa,Sanskrit,,lang-fam-inc,,Wiktionary language code: sa
+lang-sbv,Sabine,,lang-fam-itc-sbl,,Wiktionary language code: sbv
+lang-sc,Sardinian,,lang-fam-roa-sou,,Wiktionary language code: sc
+lang-sc-src,Logudorese,,lang-sc,,Wiktionary language code: sc-src; etymology-only
+lang-scn,Sicilian,,lang-fam-roa-itr,,Wiktionary language code: scn
+lang-scn-old,Old Sicilian,,lang-scn,,Wiktionary language code: scn-old; etymology-only
+lang-sco,Scots,,lang-fam-gmw-ang,,Wiktionary language code: sco
+lang-scx,Sicel,,lang-fam-itc,,Wiktionary language code: scx
+lang-sdn,Gallurese,,lang-fam-roa-itr,,Wiktionary language code: sdn
+lang-se,Northern Sami,,lang-fam-smi,,Wiktionary language code: se
+lang-sem-pro,Proto-Semitic,,lang-fam-sem,,Wiktionary language code: sem-pro; reconstructed
+lang-sem-saf,Safaitic,,lang-fam-sem-cen,,Wiktionary language code: sem-saf
+lang-sem-wes-pro,Proto-West Semitic,,lang-fam-sem-wes,,Wiktionary language code: sem-wes-pro; reconstructed
+lang-sga,Old Irish,,lang-fam-cel-gae,,Wiktionary language code: sga
+lang-sgs,Samogitian,,lang-fam-bat-eas,,Wiktionary language code: sgs
+lang-sh,Serbo-Croatian,,lang-fam-zls,,Wiktionary language code: sh
+lang-shi,Tashelhit,,lang-fam-ber,,Wiktionary language code: shi
+lang-sjs,Senhaja de Srair,,lang-fam-ber,,Wiktionary language code: sjs
+lang-sk,Slovak,,lang-fam-zlw,,Wiktionary language code: sk
+lang-sl,Slovene,,lang-fam-zls,,Wiktionary language code: sl
+lang-sla-pro,Proto-Slavic,,lang-fam-sla,,Wiktionary language code: sla-pro; reconstructed
+lang-so,Somali,,lang-fam-cus-som,,Wiktionary language code: so
+lang-spx,South Picene,,lang-fam-itc-sbl,,Wiktionary language code: spx
+lang-sq,Albanian,,lang-fam-sqj,,Wiktionary language code: sq
+lang-sqj-pro,Proto-Albanian,,lang-fam-sqj,,Wiktionary language code: sqj-pro; reconstructed
+lang-srb,Sora,,lang-fam-mun,,Wiktionary language code: srb
+lang-stq,Saterland Frisian,,lang-fam-gmw-fri,,Wiktionary language code: stq
+lang-sux,Sumerian,,lang-fam-qfa-iso,,Wiktionary language code: sux
+lang-sv,Swedish,,lang-fam-gmq-eas,,Wiktionary language code: sv
+lang-sw,Swahili,,lang-fam-bnt-swh,,Wiktionary language code: sw
+lang-swg,Swabian,,lang-fam-gmw-hgm,,Wiktionary language code: swg
+lang-sxc,Sicanian,,lang-fam-qfa-unc,,Wiktionary language code: sxc
+lang-syc,Classical Syriac,,lang-fam-sem-are,,Wiktionary language code: syc
+lang-ta,Tamil,,lang-fam-dra-tam,,Wiktionary language code: ta
+lang-ti,Tigrinya,,lang-fam-sem-eth,,Wiktionary language code: ti
+lang-tig,Tigre,,lang-fam-sem-eth,,Wiktionary language code: tig
+lang-tmh,Tuareg,,lang-fam-ber,,Wiktionary language code: tmh
+lang-tmr,Jewish Babylonian Aramaic,,lang-arc,,Wiktionary language code: tmr; etymology-only
+lang-tnq,Taíno,,lang-fam-awd-taa,,Wiktionary language code: tnq
+lang-tpw,Old Tupi,,lang-fam-tup-gua,,Wiktionary language code: tpw
+lang-tr,Turkish,,lang-fam-trk-ogz,,Wiktionary language code: tr
+lang-trk-pro,Proto-Turkic,,lang-fam-trk,,Wiktionary language code: trk-pro; reconstructed
+lang-trm,Tregami,,lang-fam-nur-sou,,Wiktionary language code: trm
+lang-tt,Tatar,,lang-fam-trk-kbu,,Wiktionary language code: tt
+lang-txb,Tocharian B,,lang-fam-ine-toc,,Wiktionary language code: txb
+lang-txh,Thracian,,lang-fam-ine,,Wiktionary language code: txh
+lang-txr,Tartessian,,lang-fam-qfa-unc,,Wiktionary language code: txr
+lang-tzm,Central Atlas Tamazight,,lang-fam-ber,,Wiktionary language code: tzm
+lang-ug,Uyghur,,lang-fam-trk-kar,,Wiktionary language code: ug
+lang-uga,Ugaritic,,lang-fam-sem-nwe,,Wiktionary language code: uga
+lang-uk,Ukrainian,,lang-fam-zle,,Wiktionary language code: uk
+lang-umc,Marrucinian,,lang-fam-itc-sbl,,Wiktionary language code: umc
+lang-und,Undetermined,,,,Wiktionary language code: und
+lang-ur,Urdu,,lang-fam-inc-hnd,,Wiktionary language code: ur
+lang-urj-fin-pro,Proto-Finnic,,lang-fam-urj-fin,,Wiktionary language code: urj-fin-pro; reconstructed
+lang-urj-pro,Proto-Uralic,,lang-fam-urj,,Wiktionary language code: urj-pro; reconstructed
+lang-vec,Venetan,,lang-fam-roa-iwr,,Wiktionary language code: vec
+lang-vi,Vietnamese,,lang-fam-mkh-vie,,Wiktionary language code: vi
+lang-vsn,Vedic Sanskrit,,lang-sa,,Wiktionary language code: vsn; etymology-only
+lang-wa,Walloon,,lang-fam-roa-oil,,Wiktionary language code: wa
+lang-wbk,Waigali,,lang-fam-nur-sou,,Wiktionary language code: wbk
+lang-wlm,Middle Welsh,,lang-fam-cel-brw,,Wiktionary language code: wlm
+lang-xaa,Andalusian Arabic,,lang-fam-sem-arb,,Wiktionary language code: xaa
+lang-xae,Aequian,,lang-fam-itc,,Wiktionary language code: xae
+lang-xaq,Aquitanian,,lang-euq-pro,,Wiktionary language code: xaq; etymology-only
+lang-xbc,Bactrian,,lang-fam-ira-sbc,,Wiktionary language code: xbc
+lang-xbm,Middle Breton,,lang-fam-cel-brs,,Wiktionary language code: xbm
+lang-xce,Celtiberian,,lang-fam-cel-his,,Wiktionary language code: xce
+lang-xcg,Cisalpine Gaulish,,lang-cel-gau,,Wiktionary language code: xcg; etymology-only
+lang-xcl,Old Armenian,,lang-fam-hyx,,Wiktionary language code: xcl
+lang-xdc,Dacian,,lang-fam-ine,,Wiktionary language code: xdc
+lang-xeb,Eblaite,,lang-fam-sem-eas,,Wiktionary language code: xeb
+lang-xfa,Faliscan,,lang-fam-itc-laf,,Wiktionary language code: xfa
+lang-xga,Galatian,,lang-fam-cel,,Wiktionary language code: xga
+lang-xgn-pro,Proto-Mongolic,,lang-fam-xgn,,Wiktionary language code: xgn-pro; reconstructed
+lang-xhc,Hunnic,,,,Wiktionary language code: xhc
+lang-xhu,Hurrian,,lang-fam-qfa-hur,,Wiktionary language code: xhu
+lang-xib,Iberian,,lang-fam-qfa-iso,,Wiktionary language code: xib
+lang-xil,Illyrian,,lang-fam-ine,,Wiktionary language code: xil; reconstructed
+lang-xlc,Lycian,,lang-fam-ine-luw,,Wiktionary language code: xlc
+lang-xld,Lydian,,lang-fam-ine-ana,,Wiktionary language code: xld
+lang-xlg,Ancient Ligurian,,lang-fam-ine,,Wiktionary language code: xlg
+lang-xli,Liburnian,,lang-fam-ine,,Wiktionary language code: xli
+lang-xlp,Lepontic,,lang-fam-cel,,Wiktionary language code: xlp
+lang-xls,Lusitanian,,lang-fam-ine,,Wiktionary language code: xls
+lang-xlu,Luwian,,lang-fam-ine-luw,,Wiktionary language code: xlu
+lang-xme-old,Old Median,,lang-fam-xme,,Wiktionary language code: xme-old
+lang-xmk,Ancient Macedonian,,lang-fam-grk,,Wiktionary language code: xmk
+lang-xng,Middle Mongol,,lang-fam-xgn,,Wiktionary language code: xng
+lang-xno,Anglo-Norman,,lang-fro-nor,,Wiktionary language code: xno; etymology-only
+lang-xpg,Phrygian,,lang-fam-ine,,Wiktionary language code: xpg
+lang-xpi,Pictish,,lang-fam-cel-brw,,Wiktionary language code: xpi
+lang-xpr,Parthian,,lang-fam-ira-mpr,,Wiktionary language code: xpr
+lang-xpu,Punic,,lang-fam-sem-can,,Wiktionary language code: xpu
+lang-xqa,Karakhanid,,lang-fam-trk-kar,,Wiktionary language code: xqa
+lang-xrr,Raetic,,lang-fam-qfa-tyn,,Wiktionary language code: xrr
+lang-xsc-sar-pro,Proto-Sarmatian,,lang-fam-xsc-sar,,Wiktionary language code: xsc-sar-pro; reconstructed
+lang-xtg,Transalpine Gaulish,,lang-cel-gau,,Wiktionary language code: xtg; etymology-only
+lang-xto,Tocharian A,,lang-fam-ine-toc,,Wiktionary language code: xto
+lang-xum,Umbrian,,lang-fam-itc-sbl,,Wiktionary language code: xum
+lang-xve,Venetic,,lang-fam-ine,,Wiktionary language code: xve
+lang-xvn,Vandalic,,lang-fam-gme,,Wiktionary language code: xvn
+lang-xvo,Volscian,,lang-fam-itc-sbl,,Wiktionary language code: xvo
+lang-xvs,Vestinian,,lang-fam-itc,,Wiktionary language code: xvs
+lang-zh,Chinese,,lang-fam-zhx,,Wiktionary language code: zh
+lang-zkt,Khitan,,lang-fam-qfa-xgx,,Wiktionary language code: zkt
+lang-zle-ort,Old Ruthenian,,lang-fam-zle,,Wiktionary language code: zle-ort
+lang-zlw-mpl,Middle Polish,,lang-pl,,Wiktionary language code: zlw-mpl; etymology-only
+lang-zlw-opl,Old Polish,,lang-fam-zlw-lch,,Wiktionary language code: zlw-opl

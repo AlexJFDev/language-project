@@ -1,7 +1,12 @@
-# Datasette metadata for the read-only browser. label_column makes foreign keys
-# show a readable label (e.g. a language's name) instead of its stable id.
+# Datasette metadata for the read-only browser (local via browse.py, hosted via
+# build_site.py). label_column makes foreign keys show a readable label (e.g. a
+# language's name) instead of its stable id.
 title: Ancient Lexicon Database
-description: Read-only view of a disposable work.db built from data/*.csv.
+description: Read-only view of the data in data/*.csv (the CSVs in git are the source of truth).
+license: Per row, by source (CC0 and CC BY-SA 4.0)
+license_url: https://github.com/AlexJFDev/language-project/blob/development/LICENSE-DATA.md
+source: AlexJFDev/language-project
+source_url: https://github.com/AlexJFDev/language-project
 databases:
   work:
     tables:

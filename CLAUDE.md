@@ -18,6 +18,7 @@ data/*.csv --load--> SQLite (schema/schema.sql) --export--> data/*.csv
 - A CSV header must exactly match the schema's column order, or load fails. Adding a column means editing the schema and every affected CSV header together.
 - Empty CSV cells load as `NULL` and `NULL` exports as empty cells.
 - `scripts/db.py` is stdlib-only. `requirements.txt` is for future importers.
+- `.github/workflows/pages.yml` builds a static Datasette Lite site with `scripts/build_site.py` and deploys it to GitHub Pages on every push to `release` (Pages source must be "GitHub Actions"). Hosted metadata is `scripts/browse_metadata.yml`, shared with `browse.py`.
 - Importers load the current `data/` through `db.py`, add rows, run its check, and export. They must refuse to run if their source's rows already exist. Revert an import in git to redo it.
 - Downloaded source files are pinned by sha256 on their `source` row (kaikki.org overwrites its files weekly). `scripts/kaikki.py` has the download and `verify` helpers, and `scripts/wiktionary_languages.py` turns Wiktionary language codes into `language` rows (with ancestors) and ids; reuse them in any Wiktionary importer.
 

@@ -31,6 +31,45 @@ which exits 1 if kaikki.org now serves a different build. The file is kept in
 `raw/` (git-ignored) and is not published. A permanent archive of the Latin
 extract is not made yet.
 
+## The pinned modules archive (language names)
+
+Wiktionary names its languages in Lua data modules, not in the entry dump.
+Etymology-only languages (Old Latin), families (Celtic) and reconstructed
+languages (Proto-Indo-European) have no entries to read a name from, so names
+come from this archive.
+
+Source row: `src-wiktionary-modules-20261003` in `data/source.csv`.
+
+| | |
+|---|---|
+| File | `https://kaikki.org/dictionary/wiktionary-modules.tar.gz` |
+| Size | 93,167,262 bytes |
+| sha256 | `bb21b9d06d5119eb1d4785fc1b341f57dc5da14d3079573bcaedbf9bbe93fe6e` |
+| kaikki.org Last-Modified | Sat, 03 Oct 2026 10:23:58 GMT |
+| Downloaded | 2026-10-16 |
+
+kaikki.org gives no build date or version for this archive, only Last-Modified,
+and it is overwritten about weekly like the dump. Fetch and verify it with
+`python3 scripts/fetch_wiktextract.py modules`.
+
+## Shared code for Wiktionary importers
+
+- `scripts/kaikki.py`: downloads, checksums, and `verify`, which exits unless a
+  file in `raw/` matches the checksum on its source row. To use another
+  kaikki.org file, add a `Target` there and register its source row.
+- `scripts/wiktionary_languages.py`: Wiktionary language code to `language`
+  rows. An importer calls `load()` once, `langs.id(code)` for the id to put in
+  a foreign key, and `langs.rows(codes)` for the rows to insert. The rows
+  include every ancestor, so each `parent_id` points at a row. Ids are
+  `lang-<code>`, and `lang-fam-<code>` for families (`gn`, `ku` and `kv` are
+  both a language and a family). Old codes Wiktionary still accepts (`VL.`,
+  `sa-ved`) are aliases of canonical ones (`la-vul`, `vsn`) and resolve to the
+  same row. `parent_id` is the parent Wiktionary lists: the family of a
+  language, the language of an etymology-only variety, the larger family of a
+  family. Notes say whether a row is a family, reconstructed or etymology-only.
+  `python3 scripts/wiktionary_languages.py lookup CODE...` looks codes up by
+  hand.
+
 ## Notes for importers
 
 - Latin entries have `lang_code` `la`. The scope of the first import is

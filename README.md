@@ -65,6 +65,12 @@ python3 scripts/browse.py          # serves http://127.0.0.1:8001
 This rebuilds the disposable `work.db` from `data/*.csv` and serves it
 read-only. Edit the CSVs, then restart to see changes.
 
+The latest release is also hosted at
+<https://alexjfdev.github.io/language-project/>, rebuilt automatically
+whenever `release` changes. It runs Datasette in your browser
+([Datasette Lite](https://github.com/simonw/datasette-lite)), so the first
+load downloads the whole database and is slow.
+
 ## Planned repository layout
 
 ```

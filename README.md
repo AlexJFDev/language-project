@@ -168,11 +168,14 @@ These keep the CSV files readable in git and the data traceable.
 
 ## License
 
-To be decided before the first release. The plan is a separate license for the
-data (for example CC BY 4.0) and for the code (for example MIT or Apache 2.0).
-Material derived from share-alike sources, such as Wiktionary, may require
-those rows to carry the same share-alike license, which is why each row records
-its source and each source its license.
+The code (`scripts/`, `schema/`) is under the [MIT License](LICENSE).
+
+The data (`data/`) is licensed per row, by source. Original contributions are
+[CC0](https://creativecommons.org/publicdomain/zero/1.0/). Material derived
+from Wiktionary is [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
+because it is share-alike. Other sources keep their own terms. Each row points
+to its source and each source records its license, so you can take only the
+rows you can use. See [LICENSE-DATA.md](LICENSE-DATA.md) for details.
 
 ## Citing
 

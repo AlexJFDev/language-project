@@ -114,7 +114,7 @@ CREATE TABLE pronunciation (
 CREATE TABLE meaning (
   id TEXT PRIMARY KEY,
   lexeme_id TEXT NOT NULL REFERENCES lexeme(id),
-  gloss TEXT NOT NULL,          -- short, in our own words
+  gloss TEXT NOT NULL,          -- short; may be taken from the source, under its license
   semantic_field_id TEXT REFERENCES semantic_field(id),
   status TEXT NOT NULL CHECK (status IN ('attested','proposed','disputed','rejected')),
   source_id TEXT NOT NULL REFERENCES source(id),

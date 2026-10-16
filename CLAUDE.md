@@ -36,5 +36,5 @@ There is no test suite or linter yet. `roundtrip` is the closest thing: it must 
 - Export is deterministic: rows sorted by `id`, schema column order, UTF-8, LF endings. Loading and exporting with no edits must produce no diff.
 - One row per line (no multi-line cells). Do not edit CSVs with spreadsheet programs, since they corrupt encodings and the Linear A/B signs.
 - Every claim (pronunciation, meaning, etymology, sign value) must reference a `source` and ideally the location within it. Competing claims are separate rows; never overwrite one to settle a dispute.
-- Record facts and short own-words glosses, not copied definitions or prose from sources. Downloaded source material goes in `raw/` (git-ignored, never published).
+- Record facts and short glosses (which may be taken from a source as written, under that source's license), not example sentences or etymology write-ups. Downloaded source material goes in `raw/` (git-ignored, never published).
 - LLM-extracted data goes to a staging file for human verification before merging. One import per commit, with the source named in the message.

@@ -110,9 +110,10 @@ These keep the CSV files readable in git and the data traceable.
   files are UTF-8 with consistent line endings. Loading the CSVs and exporting
   them again with no changes must produce no diff.
 - **One row per line.** No multi-line text in cells.
-- **Facts, not prose.** Record the word, form, and a short gloss in your own
-  words, with a citation. Do not copy a source's definitions, example sentences
-  or etymology write-ups.
+- **Facts, not prose.** Record the word, form, and a short gloss, with a
+  citation. Glosses may be taken from a source as written, under that source's
+  license (recorded on its `source` row). Do not copy example sentences or
+  etymology write-ups.
 - **Record where in the source.** Claims should say where to find them: a page
   number, entry, or URL.
 - **Record how a row was obtained.** Each lexeme notes whether it was copied

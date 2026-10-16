@@ -35,11 +35,13 @@ import wiktionary_languages as wl  # noqa: E402
 DUMP_TARGET = kaikki.TARGETS["dump"]
 DUMP = DUMP_TARGET.dest
 SOURCE_ID = DUMP_TARGET.source_id
-LANG = "la"
+# Language code -> (name of its section on the Wiktionary page, is it reconstructed).
+# Other Wiktionary importers pass their own table to collect().
+LATIN = {"la": ("Latin", False)}
 
 # Etymology templates we turn into rows, and the relation text we store.
 # For all but `cog`, argument 1 is the language of the word being described,
-# so only templates whose argument 1 is Latin describe the entry itself.
+# so only templates whose argument 1 is the entry's language describe the entry itself.
 RELATIONS = {
     "inh": "inherited", "inh+": "inherited",
     "bor": "borrowed", "bor+": "borrowed",
@@ -91,8 +93,12 @@ def headword(entry):
     return word
 
 
-def page_ref(word):
-    return f"https://en.wiktionary.org/wiki/{quote(word.replace(' ', '_'))}#Latin"
+def page_ref(word, section, reconstructed=False):
+    """Reconstructed languages have pages of their own, not a section of the word's page."""
+    title = word.replace(" ", "_")
+    if reconstructed:
+        return f"https://en.wiktionary.org/wiki/Reconstruction:{section}/{quote(title)}"
+    return f"https://en.wiktionary.org/wiki/{quote(title)}#{section.replace(' ', '_')}"
 
 
 def slug(word):
@@ -104,8 +110,8 @@ def clean_form(s):
     return None if s in ("", "-") else s
 
 
-def etymology_rows(entry, skipped):
-    """Yield (relation, language_code, form, notes) for one entry."""
+def etymology_rows(entry, skipped, lang):
+    """Yield (relation, language_code, form, notes) for one entry of language `lang`."""
     seen = set()
     for t in entry.get("etymology_templates", []):
         name, args = t["name"], t.get("args", {})
@@ -116,10 +122,10 @@ def etymology_rows(entry, skipped):
             codes, form = args.get("1", "").split(","), clean_form(args.get("2"))
             gloss = args.get("t") or args.get("gloss") or args.get("4")
         else:
-            if args.get("1") != LANG:
+            if args.get("1") != lang:
                 skipped[name + " (not about this entry)"] += 1
                 continue
-            codes = args.get("2", "").split(",") if name != "doublet" else [LANG]
+            codes = args.get("2", "").split(",") if name != "doublet" else [lang]
             form = clean_form(args.get("3" if name != "doublet" else "2"))
             gloss = args.get("t") or args.get("gloss") or args.get("5")
         notes = oneline("; ".join(x for x in (
@@ -132,44 +138,41 @@ def etymology_rows(entry, skipped):
                 yield RELATIONS[name], code, form, notes
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("--dry-run", action="store_true", help="report only; write nothing")
-    ap.add_argument("--limit", type=int, help="stop after N Latin entries (implies --dry-run)")
-    args = ap.parse_args()
-    dry = args.dry_run or args.limit is not None
+def collect(spec, langs, limit=None):
+    """One pass over the dump for every language in `spec`.
 
-    print(f"checking {DUMP.name} against the source row ...", file=sys.stderr)
-    kaikki.verify(DUMP_TARGET)
-    langs = wl.load()
-
-    con = db.connect(":memory:")
-    db.load(con)
-    if con.execute("SELECT 1 FROM lexeme WHERE source_id=?", (SOURCE_ID,)).fetchone():
-        raise SystemExit("rows from this source already exist; revert them in git to redo")
-
+    `spec` maps a Wiktionary language code to (page section, is reconstructed);
+    see LATIN. `limit` stops each language after that many entries. Returns the
+    row lists for lexeme, pronunciation, meaning and etymology, the codes of
+    every language the rows refer to, and the counters.
+    """
     lexemes, prons, means, etys = [], [], [], []
-    used_codes = {LANG}
+    used_codes = set(spec)
     counter = Counter()
     skipped = Counter()
     stats = Counter()
-    n_seen = 0
+    n_seen = Counter()
 
-    for e in stream(r'"lang_code": "la"'):
-        if e.get("lang_code") != LANG:
+    pattern = r'"lang_code": "(%s)"' % "|".join(re.escape(c) for c in spec)
+    for e in stream(pattern):
+        code = e.get("lang_code")
+        if code not in spec:
             continue
-        n_seen += 1
-        if args.limit and n_seen > args.limit:
-            break
+        n_seen[code] += 1
+        if limit and n_seen[code] > limit:
+            if all(n_seen[c] > limit for c in spec):
+                break
+            continue
         if is_inflected_form(e):
-            stats["skipped inflected forms"] += 1
+            stats[f"{code}: skipped inflected forms"] += 1
             continue
+        section, reconstructed = spec[code]
         word = e["word"]
-        counter[slug(word)] += 1
-        suffix = f"{LANG}-{slug(word)}-{counter[slug(word)]}"
+        counter[(code, slug(word))] += 1
+        suffix = f"{code}-{slug(word)}-{counter[(code, slug(word))]}"
         lid = f"lex-{suffix}"
-        ref = page_ref(word)
-        lexemes.append((lid, langs.id(LANG), oneline(headword(e)), e.get("pos"), None,
+        ref = page_ref(word, section, reconstructed)
+        lexemes.append((lid, langs.id(code), oneline(headword(e)), e.get("pos"), None,
                         "extracted", SOURCE_ID, ref, None))
 
         seen = set()
@@ -192,14 +195,44 @@ def main():
                           "attested", SOURCE_ID, ref))
 
         k = 0
-        for relation, code, form, notes in etymology_rows(e, skipped):
+        for relation, ecode, form, notes in etymology_rows(e, skipped, code):
             k += 1
-            used_codes.add(code)
-            etys.append((f"ety-{suffix}-{k}", lid, relation, None, langs.id(code),
+            used_codes.add(ecode)
+            etys.append((f"ety-{suffix}-{k}", lid, relation, None, langs.id(ecode),
                          form, SOURCE_ID, ref, notes or None))
+        stats[f"{code}: lexemes"] += 1
+
+    return lexemes, prons, means, etys, used_codes, stats, skipped
+
+
+def run(spec, doc):
+    """Command line for an importer: import the languages in `spec`, or report on them."""
+    ap = argparse.ArgumentParser(description=doc.split("\n")[0])
+    ap.add_argument("--dry-run", action="store_true", help="report only; write nothing")
+    ap.add_argument("--limit", type=int,
+                    help="stop after N entries of each language (implies --dry-run)")
+    args = ap.parse_args()
+    dry = args.dry_run or args.limit is not None
+
+    print(f"checking {DUMP.name} against the source row ...", file=sys.stderr)
+    kaikki.verify(DUMP_TARGET)
+    langs = wl.load()
+
+    con = db.connect(":memory:")
+    db.load(con)
+    done = [c for c in spec if con.execute(
+        "SELECT 1 FROM lexeme WHERE source_id=? AND language_id=?",
+        (SOURCE_ID, langs.id(c))).fetchone()]
+    if done:
+        raise SystemExit(f"rows from this source already exist for {', '.join(done)}; "
+                         "revert them in git to redo")
+
+    lexemes, prons, means, etys, used_codes, stats, skipped = collect(spec, langs, args.limit)
 
     print(f"{len(lexemes)} lexemes, {len(prons)} pronunciations, {len(means)} meanings, "
-          f"{len(etys)} etymologies, {len(used_codes)} languages; {dict(stats)}")
+          f"{len(etys)} etymologies, {len(used_codes)} languages")
+    for key in sorted(stats):
+        print(f"  {key}: {stats[key]}")
     print("etymology templates not imported:", dict(skipped.most_common(15)))
     if dry:
         print("dry run: nothing written")
@@ -221,4 +254,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(run(LATIN, __doc__))

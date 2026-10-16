@@ -1,1 +1,3 @@
 # Runtime dependencies for importers. scripts/db.py needs only the standard library.
+# Web browser for the database (scripts/browse.py):
+datasette>=0.65,<1

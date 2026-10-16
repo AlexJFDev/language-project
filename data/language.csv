@@ -1,2 +1,2 @@
-id,name,iso_code,family,period,notes
+id,name,iso_code,parent_id,period,notes
 lang-linear-a,Linear A (unknown),,,Bronze Age,Language of the Linear A inscriptions; undeciphered

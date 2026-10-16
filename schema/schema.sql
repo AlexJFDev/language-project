@@ -24,7 +24,7 @@ CREATE TABLE language (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL,
   iso_code TEXT,
-  family TEXT,
+  parent_id TEXT REFERENCES language(id),  -- immediate parent: a family, or the language a variety belongs to
   period TEXT,
   notes TEXT
 );

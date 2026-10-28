@@ -79,6 +79,20 @@ and it is overwritten about weekly like the dump. Fetch and verify it with
   Entries have `word`, `pos`, `senses[].glosses`, `sounds[].ipa` with
   `sounds[].tags`, and `etymology_text` / `etymology_templates`; not all
   entries have every field.
+- Greek (`scripts/import_wiktionary_greek.py`) uses the same scope and code. It
+  imports the eight Greek languages that have entries of their own: Ancient
+  Greek `grc`, Greek `el`, Mycenaean Greek `gmy`, Proto-Hellenic `grk-pro`,
+  Pontic `pnt`, Tsakonian `tsd`, Cappadocian `cpg` and Yevanic `yej`. Dialect
+  labels such as Koine (`grc-koi`) and Attic (`grc-att`), and Pre-Greek
+  (`qsb-grc`), have no entries; they appear only as etymology languages.
+  Mycenaean entries are headed in Linear B script, with the romanization left
+  out. Proto-Hellenic page_refs point at `Reconstruction:Proto-Hellenic/...`.
+- Etymology templates of the newer `ety` and `etymon` kinds (and `af`, `affix`,
+  `root`, `uder`) are not imported for either language; the importer prints how
+  many it skipped. `ety` alone is about 14,000 templates in the Greek entries,
+  so a follow-up could add it.
+- All Wiktionary languages share the one dump source row. The importers'
+  "already imported" check is therefore per language, not per source.
 - Pronunciation varieties (for example Classical and Ecclesiastical) go in
   `pronunciation.variety`.
 - Every imported row uses this source, and Wiktionary's glosses are kept as

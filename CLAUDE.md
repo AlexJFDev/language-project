@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-An open database of words and inscriptions from ancient languages (first goal: Linear A). It holds **data and attributed claims only**. Analysis (look-alike matching, statistics, embeddings, morphology) belongs in separate projects that read from this one. See `README.md` for the full data model and the "Adding a new source" workflow. Latin lemmas from Wiktionary are imported (`docs/sources/wiktionary.md`); the script-evidence tables (signs, inscriptions, tokens) are still empty. Source registry notes live in `docs/sources/`.
+An open database of words and inscriptions from ancient languages (first goal: Linear A). It holds **data and attributed claims only**. Analysis (look-alike matching, statistics, embeddings, morphology) belongs in separate projects that read from this one. See `README.md` for the full data model and the "Adding a new source" workflow. Latin and Greek lemmas from Wiktionary are imported (`docs/sources/wiktionary.md`); the script-evidence tables (signs, inscriptions, tokens) are still empty. Source registry notes live in `docs/sources/`.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ data/*.csv --load--> SQLite (schema/schema.sql) --export--> data/*.csv
 - `scripts/db.py` is stdlib-only. `requirements.txt` is for future importers.
 - `.github/workflows/pages.yml` builds a static Datasette Lite site with `scripts/build_site.py` and deploys it to GitHub Pages on every push to `release` (Pages source must be "GitHub Actions"). Hosted metadata is `scripts/browse_metadata.yml`, shared with `browse.py`.
 - Importers load the current `data/` through `db.py`, add rows, run its check, and export. They must refuse to run if their source's rows already exist. Revert an import in git to redo it.
-- Downloaded source files are pinned by sha256 on their `source` row (kaikki.org overwrites its files weekly). `scripts/kaikki.py` has the download and `verify` helpers, and `scripts/wiktionary_languages.py` turns Wiktionary language codes into `language` rows (with ancestors) and ids; reuse them in any Wiktionary importer.
+- Downloaded source files are pinned by sha256 on their `source` row (kaikki.org overwrites its files weekly). `scripts/kaikki.py` has the download and `verify` helpers, and `scripts/wiktionary_languages.py` turns Wiktionary language codes into `language` rows (with ancestors) and ids; reuse them in any Wiktionary importer. `scripts/import_wiktionary_latin.py` also holds the shared importer code (`collect`, `run`); a new language is a table of codes passed to `run`, as in `import_wiktionary_greek.py`. The "rows already exist" guard is per language, since all Wiktionary languages share one source row.
 
 ## Commands
 
@@ -32,6 +32,7 @@ python3 scripts/db.py roundtrip   # load then export; fails if data/ changes
 
 python3 scripts/fetch_wiktextract.py [dump|modules]   # download and checksum a kaikki.org file into raw/
 python3 scripts/import_wiktionary_latin.py [--dry-run] [--limit N]   # about 10 minutes; verifies the dump first
+python3 scripts/import_wiktionary_greek.py [--dry-run] [--limit N]   # about 7 minutes; 8 Greek languages in one pass
 python3 scripts/wiktionary_languages.py lookup CODE...   # Wiktionary language code to id, name, kind, parent
 ```
 
